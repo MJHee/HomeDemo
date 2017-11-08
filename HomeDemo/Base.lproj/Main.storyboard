@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="HomeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的家：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qn-Ms-pKp">
+                                <rect key="frame" x="20" y="100" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Fno-BG-ugc"/>
+                                    <constraint firstAttribute="height" constant="21" id="gs1-vt-zcw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcb-98-ZBv">
+                                <rect key="frame" x="97" y="100" width="278" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Opf-ef-pys"/>
+                                    <constraint firstAttribute="width" constant="42" id="zhp-Na-kKS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zhp-Na-kKS"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kk-p9-3pl">
+                                <rect key="frame" x="10" y="131" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AT8-4S-Lfv"/>
+                                    <constraint firstAttribute="width" constant="70" id="DFK-OX-fSE"/>
+                                </constraints>
+                                <state key="normal" title="添加hoom">
+                                    <color key="titleColor" red="0.25795082798369628" green="1" blue="0.15635335146294149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addHomeBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOo-h4-poU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-on-aVO">
+                                <rect key="frame" x="137" y="131" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="l0t-Oc-l5y"/>
+                                    <constraint firstAttribute="height" constant="30" id="xts-o3-W4Y"/>
+                                </constraints>
+                                <state key="normal" title="查看全部home"/>
+                                <connections>
+                                    <action selector="featchHomeBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Np-YL-F2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuG-YT-US7">
+                                <rect key="frame" x="295" y="131" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Ln-pg-z3v"/>
+                                    <constraint firstAttribute="width" constant="70" id="NpX-6G-AkF"/>
+                                </constraints>
+                                <state key="normal" title="移除home"/>
+                                <connections>
+                                    <action selector="removeHomeBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWC-MI-YaT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的房间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8N-tT-OOw">
+                                <rect key="frame" x="20" y="302" width="87" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mxb-PF-hrl"/>
+                                    <constraint firstAttribute="width" constant="87" id="t6r-a7-VSL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7cI-1s-i0D">
+                                <rect key="frame" x="10" y="331" width="355" height="326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mo1-Ob-3rj">
+                                    <size key="itemSize" width="70" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hB1-a0-aca">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3kk-p9-3pl" firstAttribute="top" secondItem="8qn-Ms-pKp" secondAttribute="bottom" constant="10" id="1JS-X0-jR3"/>
+                            <constraint firstItem="j2v-on-aVO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="25P-0S-33J"/>
+                            <constraint firstItem="7cI-1s-i0D" firstAttribute="top" secondItem="P8N-tT-OOw" secondAttribute="bottom" constant="8" id="95U-Pe-CXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7cI-1s-i0D" secondAttribute="trailing" constant="10" id="BEb-TH-w0x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7cI-1s-i0D" secondAttribute="bottom" constant="10" id="LuI-ec-fSh"/>
+                            <constraint firstItem="3kk-p9-3pl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="MFN-iX-a2S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bcb-98-ZBv" secondAttribute="trailing" id="O7w-fy-YrW"/>
+                            <constraint firstItem="P8N-tT-OOw" firstAttribute="top" secondItem="3kk-p9-3pl" secondAttribute="bottom" constant="141" id="QPI-vw-KDE"/>
+                            <constraint firstItem="Bcb-98-ZBv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Qw9-RQ-BYg"/>
+                            <constraint firstItem="8qn-Ms-pKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RvQ-JX-Rej"/>
+                            <constraint firstItem="8qn-Ms-pKp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="gaQ-t9-uQX"/>
+                            <constraint firstItem="P8N-tT-OOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hdK-oS-DBr"/>
+                            <constraint firstItem="j2v-on-aVO" firstAttribute="leading" secondItem="3kk-p9-3pl" secondAttribute="trailing" constant="57" id="lxM-3o-Spc"/>
+                            <constraint firstItem="Bcb-98-ZBv" firstAttribute="leading" secondItem="8qn-Ms-pKp" secondAttribute="trailing" constant="7" id="oP1-eD-7gN"/>
+                            <constraint firstItem="fuG-YT-US7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="oVd-1z-ZF0"/>
+                            <constraint firstItem="7cI-1s-i0D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="pHb-Ky-RCq"/>
+                            <constraint firstItem="fuG-YT-US7" firstAttribute="leading" secondItem="j2v-on-aVO" secondAttribute="trailing" constant="58" id="vGq-C9-FYM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MyHomeNameLab" destination="Bcb-98-ZBv" id="u09-6O-pBO"/>
+                        <outlet property="myCollectionView" destination="7cI-1s-i0D" id="nL3-HD-01F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+    </scenes>
+</document>
